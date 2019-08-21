@@ -1,2 +1,0 @@
-  //DELETE RECORD([Tasks])
-  //CANCEL
