@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><preferences stamp="11">
+	<com.4d>
+		<web>
+			<standalone_server>
+				<configuration allow_ssl="false" automatic_session_management="true" port_number="8099" publish_at_startup="true"/>
+			</standalone_server>
+			<remote>
+				<configuration automatic_session_management="true"/>
+			</remote>
+		</web>
+		<deployment>
+			<options/>
+		</deployment>
+		<compiler>
+			<options compilation_path="3"/>
+		</compiler>
+		<general startup_environnement="1"/>
+		<database>
+			<cache adaptative="false" flush_buffer_delay="20s" size_maximum="1000"/>
+			<misc/>
+		</database>
+		<server>
+			<network>
+				<options use_legacy_network_layer="true"/>
+			</network>
+		</server>
+	</com.4d>
+</preferences>

@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="" uuid="C39F73865CA241A89037EB6FA5B64695" collation_locale="en">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="Tasks" uuid="E3A24E2793704C68988C79934D36CDA2" id="1">
+		<field name="ID" uuid="10E84DEE6CC344AEB8B5A3A159E01367" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Title" uuid="746F86719B0E49CEB55E3F976DC5CEBD" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="CreatorID" uuid="D2901793AF3847FE8449053CBBE8CD93" type="4" never_null="true" id="3"/>
+		<field name="AssigneeID" uuid="20B3913F9C2F4B5F9705CF30640707D5" type="4" never_null="true" id="4"/>
+		<field name="StartDate" uuid="2D52290066AF4AACA43D5E8FFBC6A836" type="8" never_null="true" id="5"/>
+		<field name="DueDate" uuid="CAF72BE7BFBE42A8A5D8D956999BBF79" type="8" never_null="true" id="6"/>
+		<field name="Status" uuid="1AF8727ACA64408FA2F3CFD80CA0D3DB" type="4" never_null="true" id="7"/>
+		<field name="Priority" uuid="0ABBD90855A546C58E4D635E229974E6" type="4" never_null="true" id="8"/>
+		<field name="CategoryID" uuid="F36C2186FB054B0E93CA2DBBFA96E779" type="4" never_null="true" id="9"/>
+		<field name="Description" uuid="9F6B5757F18946DA98D6FD142492A80A" type="10" never_null="true" id="10"/>
+		<field name="CompletePercentage" uuid="CD619A85B24240568781890340ABCC48" type="4" never_null="true" id="11"/>
+		<field name="Email" uuid="167B16D615204E31B93D92ADABFBF9A8" type="10" limiting_length="255" never_null="true" id="12"/>
+		<field name="__GlobalStamp" uuid="E177F65513AB4854AAE3B7F73FAEBF71" type="5" id="16"/>
+		<primary_key field_name="ID" field_uuid="10E84DEE6CC344AEB8B5A3A159E01367"/>
+		<table_extra input_form="Input" output_form="Output">
+			<editor_table_info displayable_fields_count="15">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="29.34375" top="39.46484375" width="206.984375" height="359.19140625"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="(Table_1)" uuid="2E3D1B945D074BDB8A82042142E371C1" id="2" hide_in_REST="true">
+		<field name="ID" uuid="0E5A56DEC28B4D33AC29BFB5D04C7C85" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Field_2" uuid="9E37D14462064BCD9BEDA53A01556E06" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="Field_3" uuid="2A7B30FBDF214E6AA0B93049269B6B6B" type="10" limiting_length="255" never_null="true" id="3"/>
+		<primary_key field_name="ID" field_uuid="0E5A56DEC28B4D33AC29BFB5D04C7C85"/>
+		<table_extra trashed="true" input_form="" output_form="">
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="354.23828125" top="235.94140625" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Category" uuid="BA7321BCE6DB4A319915CBB2C01269BF" id="3">
+		<field name="ID" uuid="CAB162F6C5DD4D00AA21747AEB71E18F" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Name" uuid="489B08649DC741DCA07EAEF2CE4AB746" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="CategoryTypeID" uuid="B30EF0A6F9FB4131B5259965F98EBBE5" type="4" never_null="true" id="3"/>
+		<field name="__GlobalStamp" uuid="2A7837C431B649719F126BFF9932C72D" type="5" id="6"/>
+		<primary_key field_name="ID" field_uuid="CAB162F6C5DD4D00AA21747AEB71E18F"/>
+		<table_extra input_form="Input" output_form="Output">
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="301.46875" top="39.05078125" width="158.859375" height="170.19921875"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="__DeletedRecords" uuid="0BC9467305C04EA690717E8F46FB613F" id="4" leave_tag_on_delete="true" prevent_journaling="true">
+		<field name="ID" uuid="A5B0270522924BEAAFEE45F786BCE9D6" type="5" unique="true" autosequence="true" id="1"/>
+		<field name="__Stamp" uuid="8690AD310772411CBDEEA1755BD73BA2" type="5" id="2"/>
+		<field name="__TableNumber" uuid="C232E20C1CB54F759CEF7A89A7AFDFCB" type="4" id="3"/>
+		<field name="__TableName" uuid="76CB1AEED08647A5A61C483714F651C0" type="10" limiting_length="255" id="4"/>
+		<field name="__PrimaryKey" uuid="4628341492824E39BDF8E9C84B4E677F" type="10" limiting_length="255" id="5"/>
+		<primary_key field_name="ID" field_uuid="A5B0270522924BEAAFEE45F786BCE9D6"/>
+		<table_extra input_form="Input" output_form="Output">
+			<editor_table_info fields_ordering="1" displayable_fields_count="12">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="533.921875" top="8.30078125" width="249.734375" height="304.41796875"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="(Table_1_1)" uuid="F6EA9DC9B3C441FABEE0DC98F50CBB1A" id="5" hide_in_REST="true">
+		<field name="ID" uuid="6CB5D65874C941CB876BC944755ACBAF" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Field_2" uuid="FB12D770A07A4A22B2C73416B9B43186" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="Field_3" uuid="4AE56DCE7B2E4102800818B7ADB60DFC" type="10" limiting_length="255" never_null="true" id="3"/>
+		<field name="__GlobalStamp" uuid="3B77934821EF4E63A7FA32CD8EEB5C3F" type="5" id="4"/>
+		<primary_key field_name="ID" field_uuid="6CB5D65874C941CB876BC944755ACBAF"/>
+		<table_extra trashed="true" input_form="" output_form="">
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="553.31640625" top="240.93359375" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="(Table_2)" uuid="5AF7B2C3C3344F2E97AFC57BDA1AA30A" id="6" hide_in_REST="true">
+		<field name="ID" uuid="5752CBF7189F4360B80D1848A8A56CAF" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Field_2" uuid="C8F24FFEB9054826B24BBFACCDD68E88" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="Field_3" uuid="5F2040190E934D6183807989EE0571F3" type="10" limiting_length="255" never_null="true" id="3"/>
+		<field name="Field_4" uuid="A97241B19CD3437E93E9E3AB5B75AEDC" type="10" limiting_length="255" never_null="true" id="4"/>
+		<field name="__GlobalStamp" uuid="C4C68FDCFFC64C249C06B475B45E064E" type="5" id="5"/>
+		<primary_key field_name="ID" field_uuid="5752CBF7189F4360B80D1848A8A56CAF"/>
+		<table_extra trashed="true" input_form="" output_form="">
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="261.1640625" top="485.94140625" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="(Table_3)" uuid="2AE98E2C9888462586F0555599DFA052" id="7" hide_in_REST="true">
+		<field name="ID" uuid="F8FEB11B5A0B4276A5249FE2980860FD" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Field_2" uuid="E223B4D79D53490691E9C2C1848AE2A9" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="Field_3" uuid="88CD9585512E43758A76AB9A839C3547" type="10" limiting_length="255" never_null="true" id="3"/>
+		<field name="Field_4" uuid="758D9A48A3B5491E8F2D19E5327B6936" type="10" limiting_length="255" never_null="true" id="4"/>
+		<field name="__GlobalStamp" uuid="4F2A040EDE8A475BB402E264AFC629DB" type="5" id="5"/>
+		<primary_key field_name="ID" field_uuid="F8FEB11B5A0B4276A5249FE2980860FD"/>
+		<table_extra trashed="true" input_form="" output_form="">
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="40" top="534" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="(Table_4)" uuid="8785030E3E5B4FEC97F065B17D099525" id="8" hide_in_REST="true">
+		<field name="ID" uuid="E6D9839BAA3F4D9BA85ECAC97A2C0029" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Field_2" uuid="70A017C92CB04353BFE665A56F53EA90" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="Field_3" uuid="8EA616DD04ED4900943C68E56219B61A" type="10" limiting_length="255" never_null="true" id="3"/>
+		<field name="Field_4" uuid="3514B7F22ED94747894E39F82767A989" type="10" limiting_length="255" never_null="true" id="4"/>
+		<field name="Field_5" uuid="7B0662C4F65D447D95EB3BAEA837BCC4" type="10" limiting_length="255" never_null="true" id="5"/>
+		<field name="__GlobalStamp" uuid="BD6287D338194B4BAB016149826288E6" type="5" id="6"/>
+		<primary_key field_name="ID" field_uuid="E6D9839BAA3F4D9BA85ECAC97A2C0029"/>
+		<table_extra trashed="true" input_form="(Input)" output_form="(Output)">
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="640" top="40" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="(Table_1_2)" uuid="22A592C40D0C4E24B862846865C35E9C" id="9" hide_in_REST="true">
+		<field name="ID" uuid="7AB5866CF87E4D5896085F94F28E4068" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Field_2" uuid="474AE5E38F3C494588C30691D726F2C7" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="Field_3" uuid="E4CE675106F34FCB8D6854475EA77B3B" type="10" limiting_length="255" never_null="true" id="3"/>
+		<primary_key field_name="ID" field_uuid="7AB5866CF87E4D5896085F94F28E4068"/>
+		<table_extra trashed="true" input_form="" output_form="">
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="305.0234375" top="337.0703125" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="(Table_2_1)" uuid="A867C816D866497B83711349C218B81C" id="10" hide_in_REST="true">
+		<field name="ID" uuid="691F309AF9854D19B63489EF08BB5A56" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Field_2" uuid="E7B60ED8B2D84D9E8EF63E23CD240B27" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="Field_3" uuid="8B7E03A4046B47D6B5395209FE1C4438" type="10" limiting_length="255" never_null="true" id="3"/>
+		<primary_key field_name="ID" field_uuid="691F309AF9854D19B63489EF08BB5A56"/>
+		<table_extra trashed="true" input_form="" output_form="">
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="476.921875" top="342.3125" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="(Table_1_3)" uuid="582BFDFDFA7B4CB8A59CCCF7F776B916" id="11" hide_in_REST="true">
+		<field name="ID" uuid="8738623C6FE64BF8902D8042AD369780" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="qdsf" uuid="E8CDCFFA256344A6871AD9F23AAE091C" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="Field_3" uuid="F01B35738BF44F61B23DEAFA03362C21" type="10" limiting_length="255" never_null="true" id="3"/>
+		<primary_key field_name="ID" field_uuid="8738623C6FE64BF8902D8042AD369780"/>
+		<table_extra trashed="true" input_form="" output_form="">
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="387.984375" top="402.6484375" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="(Table_1_4)" uuid="F1D9D063CA2C4B35ACABCB700C0824EB" id="12" hide_in_REST="true">
+		<field name="ID" uuid="344BD78CF7AF4502BE65095D287C533B" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Field_2" uuid="3D97CF435C3B467BA0209151F0BDCDE1" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="Field_3" uuid="4F8D3F4C0AA844FA9EC49E8772717BEE" type="10" limiting_length="255" never_null="true" id="3"/>
+		<primary_key field_name="ID" field_uuid="344BD78CF7AF4502BE65095D287C533B"/>
+		<table_extra trashed="true" input_form="" output_form="">
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="382.98046875" top="374.6796875" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="(Table_2_2)" uuid="44B36BF1F85141B28D4625B4C96BFB65" id="13" hide_in_REST="true">
+		<field name="ID" uuid="A173702B372B43DCA333E6F871FDA476" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Field_2" uuid="DF6CA790575941A0982D0A474C418484" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="Field_3" uuid="CB952A472C0F4E8A8585A0B47555F756" type="10" limiting_length="255" never_null="true" id="3"/>
+		<primary_key field_name="ID" field_uuid="A173702B372B43DCA333E6F871FDA476"/>
+		<table_extra trashed="true" input_form="" output_form="">
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="637.96484375" top="332.421875" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="(Table_3_1)" uuid="7A4370970D764E02BF65A7614AB81A29" id="14" hide_in_REST="true">
+		<field name="ID" uuid="B49EAEBFF59342D5BD3967A8D3A17C93" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Field_2" uuid="FEC63B02E0574720A8200ED189E9D8C0" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="Field_3" uuid="946EEC9073184B48BE86E967D8B16D7F" type="10" limiting_length="255" never_null="true" id="3"/>
+		<field name="Field_4" uuid="5593F576A2CA44DF85E3EA9835841FAE" type="10" limiting_length="255" never_null="true" id="4"/>
+		<primary_key field_name="ID" field_uuid="B49EAEBFF59342D5BD3967A8D3A17C93"/>
+		<table_extra trashed="true" input_form="" output_form="">
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="721.73828125" top="94.51953125" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="(Table_1_5)" uuid="8BE926AAEE6545F5A04E800BDC938BB2" id="15" hide_in_REST="true">
+		<field name="ID" uuid="73F7C5D672234B009F09140D21FA72F4" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Field_2" uuid="E6795487CBDB4DE595E90D9DC3568D1F" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="Field_3" uuid="05C963F6E73147309E432E89C3EEE838" type="10" limiting_length="255" never_null="true" id="3"/>
+		<primary_key field_name="ID" field_uuid="73F7C5D672234B009F09140D21FA72F4"/>
+		<table_extra trashed="true" input_form="" output_form="">
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="452.86328125" top="341.9453125" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="(Table_2_3)" uuid="B9E020C77E934080891D6694C45C563D" id="16" hide_in_REST="true">
+		<field name="ID" uuid="22A563724E1D485C81A11EC6BF867FED" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Field_2" uuid="A2C766DA5FB740369FA69CF48A7D5EBE" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="Field_3" uuid="511E415A26A84909BB2E94D5516839E1" type="10" limiting_length="255" never_null="true" id="3"/>
+		<primary_key field_name="ID" field_uuid="22A563724E1D485C81A11EC6BF867FED"/>
+		<table_extra trashed="true" input_form="" output_form="">
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="682.27734375" top="370.91796875" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<relation uuid="ABFD99FD18DC46E0ABC9C906A6D5C876" name_Nto1="TaskCategory" name_1toN="TaskCategory_return" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="F36C2186FB054B0E93CA2DBBFA96E779" name="CategoryID">
+				<table_ref uuid="E3A24E2793704C68988C79934D36CDA2" name="Tasks"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="CAB162F6C5DD4D00AA21747AEB71E18F" name="ID">
+				<table_ref uuid="BA7321BCE6DB4A319915CBB2C01269BF" name="Category"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="true" entry_create="false" choice_field="3" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="false" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<index kind="regular" unique_keys="true" uuid="09FE71AA8549458A8EF2755745BBD998" type="7">
+		<field_ref uuid="CAB162F6C5DD4D00AA21747AEB71E18F" name="ID">
+			<table_ref uuid="BA7321BCE6DB4A319915CBB2C01269BF" name="Category"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="136C6E8B15C94BEAB0DCD7185301E73A" type="7">
+		<field_ref uuid="10E84DEE6CC344AEB8B5A3A159E01367" name="ID">
+			<table_ref uuid="E3A24E2793704C68988C79934D36CDA2" name="Tasks"/>
+		</field_ref>
+	</index>
+	<index kind="regular" name="__GlobalStamp_table_1" uuid="1719F0B24B4A4DFD8CABA0254A6E6A3D" type="7">
+		<field_ref uuid="3B77934821EF4E63A7FA32CD8EEB5C3F" name="__GlobalStamp">
+			<table_ref uuid="F6EA9DC9B3C441FABEE0DC98F50CBB1A" name="(Table_1_1)"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" name="__DeletedRecordsID" uuid="1E5E14F61C79458A82F6D4F2F589CB61" type="7">
+		<field_ref uuid="A5B0270522924BEAAFEE45F786BCE9D6" name="ID">
+			<table_ref uuid="0BC9467305C04EA690717E8F46FB613F" name="__DeletedRecords"/>
+		</field_ref>
+	</index>
+	<index kind="regular" name="__GlobalStamp_table_4" uuid="24FE0AA1656C453F878C73971EAD7607" type="7">
+		<field_ref uuid="BD6287D338194B4BAB016149826288E6" name="__GlobalStamp">
+			<table_ref uuid="8785030E3E5B4FEC97F065B17D099525" name="(Table_4)"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="2C79BCD4C0334E7B8C9B2C0C4889F40B" type="7">
+		<field_ref uuid="6CB5D65874C941CB876BC944755ACBAF" name="ID">
+			<table_ref uuid="F6EA9DC9B3C441FABEE0DC98F50CBB1A" name="(Table_1_1)"/>
+		</field_ref>
+	</index>
+	<index kind="regular" name="__GlobalStamp_category" uuid="3934F10EA7D84DDC8F2BFEDBC3143F5D" type="7">
+		<field_ref uuid="2A7837C431B649719F126BFF9932C72D" name="__GlobalStamp">
+			<table_ref uuid="BA7321BCE6DB4A319915CBB2C01269BF" name="Category"/>
+		</field_ref>
+	</index>
+	<index kind="regular" name="__DeletedRecords__Stamp" uuid="3939F88B439A4DA590132A2D4551AB06" type="7">
+		<field_ref uuid="8690AD310772411CBDEEA1755BD73BA2" name="__Stamp">
+			<table_ref uuid="0BC9467305C04EA690717E8F46FB613F" name="__DeletedRecords"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="4AE77220D67C4970BAEFCFFD71BA4DDC" type="7">
+		<field_ref uuid="22A563724E1D485C81A11EC6BF867FED" name="ID">
+			<table_ref uuid="B9E020C77E934080891D6694C45C563D" name="(Table_2_3)"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="60ECFEF4B4474B1BAD38D98BAC4848E8" type="7">
+		<field_ref uuid="E6D9839BAA3F4D9BA85ECAC97A2C0029" name="ID">
+			<table_ref uuid="8785030E3E5B4FEC97F065B17D099525" name="(Table_4)"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="643FBF0077DC41FD80A2368F290C2C93" type="7">
+		<field_ref uuid="A173702B372B43DCA333E6F871FDA476" name="ID">
+			<table_ref uuid="44B36BF1F85141B28D4625B4C96BFB65" name="(Table_2_2)"/>
+		</field_ref>
+	</index>
+	<index kind="regular" name="__GlobalStamp_table_2" uuid="6BDD859333854E3DBE6253EFA5A06E1A" type="7">
+		<field_ref uuid="C4C68FDCFFC64C249C06B475B45E064E" name="__GlobalStamp">
+			<table_ref uuid="5AF7B2C3C3344F2E97AFC57BDA1AA30A" name="(Table_2)"/>
+		</field_ref>
+	</index>
+	<index kind="regular" name="__GlobalStamp_table_3" uuid="70F4C3CD51314A128E3B2498C8A7F585" type="7">
+		<field_ref uuid="4F2A040EDE8A475BB402E264AFC629DB" name="__GlobalStamp">
+			<table_ref uuid="2AE98E2C9888462586F0555599DFA052" name="(Table_3)"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="9B150DC4E54F4D7AAB36BCC268C09B17" type="7">
+		<field_ref uuid="7AB5866CF87E4D5896085F94F28E4068" name="ID">
+			<table_ref uuid="22A592C40D0C4E24B862846865C35E9C" name="(Table_1_2)"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="B2B1713A33C44E7891EBF08306945DA5" type="7">
+		<field_ref uuid="F8FEB11B5A0B4276A5249FE2980860FD" name="ID">
+			<table_ref uuid="2AE98E2C9888462586F0555599DFA052" name="(Table_3)"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="BAE080246ED141309E2DB3A989695BE0" type="7">
+		<field_ref uuid="8738623C6FE64BF8902D8042AD369780" name="ID">
+			<table_ref uuid="582BFDFDFA7B4CB8A59CCCF7F776B916" name="(Table_1_3)"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="BEC982D4787448FEB9FE74DD6D57458C" type="7">
+		<field_ref uuid="344BD78CF7AF4502BE65095D287C533B" name="ID">
+			<table_ref uuid="F1D9D063CA2C4B35ACABCB700C0824EB" name="(Table_1_4)"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="C20530787FE24E62978159A01C02CFD0" type="7">
+		<field_ref uuid="B49EAEBFF59342D5BD3967A8D3A17C93" name="ID">
+			<table_ref uuid="7A4370970D764E02BF65A7614AB81A29" name="(Table_3_1)"/>
+		</field_ref>
+	</index>
+	<index kind="regular" name="__GlobalStamp_tasks" uuid="D81AE013F67C4163931AEF9D6040BF7A" type="7">
+		<field_ref uuid="E177F65513AB4854AAE3B7F73FAEBF71" name="__GlobalStamp">
+			<table_ref uuid="E3A24E2793704C68988C79934D36CDA2" name="Tasks"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="E69C86DB97734D1EA6A1FB4F189FB806" type="7">
+		<field_ref uuid="73F7C5D672234B009F09140D21FA72F4" name="ID">
+			<table_ref uuid="8BE926AAEE6545F5A04E800BDC938BB2" name="(Table_1_5)"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="E765DE78C3804DB5A2FDEEAC3A80EAAC" type="7">
+		<field_ref uuid="691F309AF9854D19B63489EF08BB5A56" name="ID">
+			<table_ref uuid="A867C816D866497B83711349C218B81C" name="(Table_2_1)"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="ED57E4ADDB6A45FA80608A5AFCCEC1A3" type="7">
+		<field_ref uuid="0E5A56DEC28B4D33AC29BFB5D04C7C85" name="ID">
+			<table_ref uuid="2E3D1B945D074BDB8A82042142E371C1" name="(Table_1)"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="FCF09C5F3F984134994E2E2DFF7ADED7" type="7">
+		<field_ref uuid="5752CBF7189F4360B80D1848A8A56CAF" name="ID">
+			<table_ref uuid="5AF7B2C3C3344F2E97AFC57BDA1AA30A" name="(Table_2)"/>
+		</field_ref>
+	</index>
+	<base_extra __stringCompHash="icu:63.1.0" __keywordBuildingHash="icu:63.1.0" package_name="Tasks" structure_file_name="Tasks" data_file_path=":Tasks.4DD">
+		<journal_file journal_file_enabled="false"/>
+	</base_extra>
+</base>

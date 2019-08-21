@@ -1,0 +1,54 @@
+﻿{
+	"Task Status": {
+		"lineHeight": 18,
+		"editable": true,
+		"items": [
+			{
+				"text": "Not Started",
+				"ref": 1,
+				"editable": true
+			},
+			{
+				"text": "In Progress",
+				"ref": 2,
+				"editable": true
+			},
+			{
+				"text": "Completed",
+				"ref": 3,
+				"editable": true
+			},
+			{
+				"text": "Postponed",
+				"ref": 4,
+				"editable": true
+			}
+		]
+	},
+	"Task Status JP": {
+		"lineHeight": 18,
+		"editable": true,
+		"items": [
+			{
+				"text": "着手前",
+				"ref": 1,
+				"editable": true
+			},
+			{
+				"text": "進行中",
+				"ref": 2,
+				"editable": true
+			},
+			{
+				"text": "完了",
+				"ref": 3,
+				"editable": true
+			},
+			{
+				"text": "延期",
+				"ref": 4,
+				"editable": true
+			}
+		]
+	}
+}

@@ -1,0 +1,225 @@
+﻿{
+	"methods": {
+		"loadTaskCategorySelection": {
+			"timeStamp": "2019-08-21T18:51:58.679Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"InputOnValidate": {
+			"timeStamp": "2019-08-21T18:51:58.678Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"searchTasks": {
+			"timeStamp": "2019-08-21T18:51:58.680Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"updateTaskRecordFound": {
+			"timeStamp": "2019-08-21T18:51:58.682Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"startupProcedure": {
+			"timeStamp": "2019-08-21T18:51:58.676Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"openCloseAllTasks": {
+			"timeStamp": "2019-08-21T18:51:58.692Z"
+		},
+		"Compiler_Arrays": {
+			"timeStamp": "2019-08-21T18:51:58.681Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"openFormWindow": {
+			"timeStamp": "2019-08-21T18:51:58.680Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"openTaskManager": {
+			"timeStamp": "2019-08-21T18:51:58.677Z"
+		},
+		"initializeTaskInputForm": {
+			"timeStamp": "2019-08-21T18:51:58.677Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"resizePicture": {
+			"timeStamp": "2019-08-21T18:51:58.682Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"autoFillSetObject": {
+			"timeStamp": "2019-08-21T18:51:58.675Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"getListItemRef": {
+			"timeStamp": "2019-08-21T18:51:58.683Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"modifyStatus": {
+			"timeStamp": "2019-08-21T18:51:58.684Z"
+		},
+		"formatTaskStartus": {
+			"timeStamp": "2019-08-21T18:51:58.679Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"Compiler_Variables": {
+			"timeStamp": "2019-08-21T18:51:58.681Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"openCloseTask": {
+			"timeStamp": "2019-08-21T18:51:58.692Z"
+		},
+		"Compiler_Methods": {
+			"timeStamp": "2019-08-21T18:51:58.682Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"createTaskWindow": {
+			"timeStamp": "2019-08-21T18:51:58.675Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"postponeAll": {
+			"timeStamp": "2019-08-21T18:51:58.693Z"
+		},
+		"(Postponed)": {
+			"timeStamp": "2019-08-21T18:51:58.691Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"(ModifyStatus90)": {
+			"timeStamp": "2019-08-21T18:51:58.690Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"(postponeAll)": {
+			"timeStamp": "2019-08-21T18:51:58.692Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"(ModifyDate)": {
+			"timeStamp": "2019-08-21T18:51:58.684Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"(ActionModifyStatus)": {
+			"timeStamp": "2019-08-21T18:51:58.686Z",
+			"attributes": {
+				"invisible": true,
+				"publishedWeb": true
+			}
+		},
+		"(ModifyStatus80)": {
+			"timeStamp": "2019-08-21T18:51:58.690Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"(ModifyStatus40)": {
+			"timeStamp": "2019-08-21T18:51:58.688Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"(ModifyStatus60)": {
+			"timeStamp": "2019-08-21T18:51:58.689Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"(ModifyStatus20)": {
+			"timeStamp": "2019-08-21T18:51:58.686Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"(ModifyStatus)": {
+			"timeStamp": "2019-08-21T18:51:58.693Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"(test_ModifyDate)": {
+			"timeStamp": "2019-08-21T18:51:58.684Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"(NotStarted)": {
+			"timeStamp": "2019-08-21T18:51:58.691Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"(ModifyStatus20_1)": {
+			"timeStamp": "2019-08-21T18:51:58.687Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"(ModifyStatus70)": {
+			"timeStamp": "2019-08-21T18:51:58.689Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"(ModifyStatus50)": {
+			"timeStamp": "2019-08-21T18:51:58.688Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"(ActionModifyDate)": {
+			"timeStamp": "2019-08-21T18:51:58.685Z",
+			"attributes": {
+				"invisible": true,
+				"publishedWeb": true
+			}
+		},
+		"(ModifyStatus10)": {
+			"timeStamp": "2019-08-21T18:51:58.686Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"(ModifyStatus30)": {
+			"timeStamp": "2019-08-21T18:51:58.687Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"(test_ModifyStatus)": {
+			"timeStamp": "2019-08-21T18:51:58.685Z",
+			"attributes": {
+				"invisible": true
+			}
+		}
+	}
+}

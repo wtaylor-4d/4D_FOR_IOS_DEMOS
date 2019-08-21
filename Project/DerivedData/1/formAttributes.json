@@ -1,0 +1,16 @@
+﻿{
+	"forms": {
+		"Input": {
+			"timeStamp": "2019-08-21T18:51:58.732Z",
+			"destination": "detailScreen"
+		},
+		"Output": {
+			"timeStamp": "2019-08-21T18:51:58.735Z",
+			"destination": "listScreen"
+		},
+		"taskInput2": {
+			"timeStamp": "2019-08-21T18:51:58.742Z",
+			"destination": "detailScreen"
+		}
+	}
+}

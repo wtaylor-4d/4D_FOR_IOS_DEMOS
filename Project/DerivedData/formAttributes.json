@@ -1,0 +1,20 @@
+﻿{
+	"forms": {
+		"taskManager": {
+			"timeStamp": "2019-08-21T18:51:58.723Z",
+			"destination": "detailScreen"
+		},
+		"taskList1": {
+			"timeStamp": "2019-08-21T18:51:58.729Z",
+			"destination": "detailScreen"
+		},
+		"taskCategoryList": {
+			"timeStamp": "2019-08-21T18:51:58.726Z",
+			"destination": "detailScreen"
+		},
+		"taskInput": {
+			"timeStamp": "2019-08-21T18:51:58.720Z",
+			"destination": "detailScreen"
+		}
+	}
+}
